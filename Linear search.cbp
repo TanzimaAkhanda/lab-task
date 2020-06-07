@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int arr[5] = {9,2,6,8,4};
+    // searching 8 in the array
+    int flag = -1;
+    for(int i = 0; i < 5; i++)
+        if(arr[i] == 8){
+            flag = i;
+            break;
+        }
+    if(flag == -1)
+        printf("Element not found\n");
+    else
+        printf("Element found at index %d\n", flag);
+    return 0;
+}

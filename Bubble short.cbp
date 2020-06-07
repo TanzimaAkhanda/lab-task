@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+    int arr[5] = {9,2,6,8,4}, n = 5;
+    for(int i = 0; i < n - 1; i++){
+        int swaping = 1;
+        for(int j = 0; j < n - i - 1; j++){
+            if(arr[j] > arr[j + 1]){
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+                swaping = 0;
+            }
+        }
+        if(swapeing)
+            break;
+    }
+    for(int i = 0; i < 5; i++)
+        printf("%d ", arr[i]);
+    return 0;
+}
